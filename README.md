@@ -1,4 +1,4 @@
-# Stroma Vision Challenge ! olan yere link koy
+# Stroma Vision Challenge
 Strom Vision technical interview. In this challenge we are asked to identify the nuts and bolts in the video and find the total number of detected objects.
 
 ![](https://github.com/Hasan-atc/Stroma/blob/main/detect.gif)
