@@ -177,7 +177,8 @@ def run(
                         annotator.box_label(xyxy, label, color=colors(c, True))
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
-
+            
+            #%%
             global sayac, toplam
 
             sayac = sayac + 1  # The counter is incremented by 1 for each frame in order to scroll through the list by the frame length of the video.
@@ -208,7 +209,8 @@ def run(
             else:
                 bolt_liste.append(0)  # 0 is added if no object is detected on the frame
                 nut_liste.append(0)
-
+            #%%
+            
             # Stream results
             im0 = annotator.result()
             if view_img:
@@ -240,7 +242,8 @@ def run(
 
         # Print time (inference-only)
         LOGGER.info(f"{s}{'' if len(det) else '(no detections), '}{dt[1].dt * 1E3:.1f}ms")
-
+    
+    #%%
     top_bolt = 0
     top_nut = 0
 
@@ -258,7 +261,8 @@ def run(
     print("Bulunan Toplam Nesne : {}\n".format(top_bolt + top_nut))
     print("Bulunan Toplam Bolt : {}\n".format(top_bolt))
     print("Bulunan Toplam Nut : {}\n".format(top_nut))
-
+    #%%
+    
     # Print results
     t = tuple(x.t / seen * 1E3 for x in dt)  # speeds per image
     # LOGGER.info(f'Speed: %.1fms pre-process, %.1fms inference, %.1fms NMS per image at shape {(1, 3, *imgsz)}' % t)
