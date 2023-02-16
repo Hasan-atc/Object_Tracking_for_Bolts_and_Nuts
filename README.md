@@ -110,4 +110,4 @@ The working logic of this algorithm is as follows:
   ````
   ![Screenshot from 2023-02-16 12-47-16](https://user-images.githubusercontent.com/74008306/219329564-352adc1a-e387-4ea9-b8bb-7fa457e74e0c.png)
   
-  > See the detect.py file for detailed analysis!
+  > See the [detect.py](https://github.com/Hasan-atc/Stroma/blob/main/yolov5/detect.py) file for detailed analysis
