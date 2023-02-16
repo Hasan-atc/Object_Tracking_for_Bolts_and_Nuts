@@ -27,7 +27,7 @@ torch.__version__ # torch version control
 ![Screenshot from 2023-02-16 11-47-44](https://user-images.githubusercontent.com/74008306/219314342-a2a45de0-f143-49ad-8150-9f47bd1c049a.png)
 
 :small_red_triangle_down: Starting the training according to the data set we have.
-> The path, object classes and ids of our own dataset are specified in the [custom_data.yaml](https://github.com/Hasan-atc/Stroma_Vision_challenge/blob/main/yolov5/custom_data.yaml) file
+> The path, object classes and ids of our own dataset are specified in the [custom_data.yaml](https://github.com/Hasan-atc/Stroma/blob/main/yolov5/custom_data.yaml) file
 
 
 ````
