@@ -40,7 +40,7 @@ python3 train.py --weights path/to/weights/file --cfg path/to/custom_data.yaml -
 🔻 Object detection with the weight file created after the training
 ````
 cd yolov5/
-python3 detect.py --weights path/to/train/weight --source file/path/to/detect/object --conf-thresh 0.6
+python3 detect.py --weights path/to/train/weight --source file/path/to/detect/object --conf-thres 0.6
 ````
 > For more information, please check the [YoloV5 repo](https://github.com/ultralytics/yolov5)
 
