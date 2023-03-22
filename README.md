@@ -97,12 +97,14 @@ The working logic of this algorithm is as follows:
     for count in range(0, sayac):  
         if bolt_liste[count + 1] != bolt_liste[count]:  # If a new object is entered in the frame, the total number of objects is increased by 1
             if bolt_liste[count + 1] > bolt_liste[count]:
-                top_bolt = top_bolt + 1
+                fark_bolt = bolt_liste[count + 1] - bolt_liste[count]
+                top_bolt = int(top_bolt + fark_bolt)
 
     for count in range(0, sayac):
         if nut_liste[count + 1] != nut_liste[count]:
             if nut_liste[count + 1] > nut_liste[count]:
-                top_nut = top_nut + 1
+                fark_nut = nut_liste[count + 1] - nut_liste[count]
+                top_nut = int(top_nut + fark_nut)
 
     print("Bulunan Toplam Nesne : {}\n".format(top_bolt + top_nut))
     print("Bulunan Toplam Bolt : {}\n".format(top_bolt))
